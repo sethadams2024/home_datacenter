@@ -1,0 +1,17 @@
+Adding the container was followed from this guide: 
+
+https://docs.pi-hole.net/docker/
+
+There were some slight hiccups
+1. There was no stated password
+### to circumvent this, delete the API password that it has
+
+run :
+sudo docker exec -it pihole pihole setpassword
+
+This will prompt you to create a password
+
+To access pi hole:
+http://(IP of PI)/admin
+
+if you do not include the /admin it will give a redirect link anyway.
